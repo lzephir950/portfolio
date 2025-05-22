@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique - Passwordless</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  .scroll-animate {
+    transition: all 0.8s ease-out;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-slide-in {
+    animation: slide-in 0.8s ease-out forwards;
+  }
+</style>
+</head>
+<body class="bg-black font-sans text-white">
+  <header class="bg-600 text-white py-6 shadow-md" style="color:#38D807">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Veille Technologique : L'Authentification sans mot de passe</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10 space-y-10">
+    <!-- Sujet -->
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+      <h2 class="text-2xl font-semibold mb-4">Sujet</h2>
+      <p>Ma veille technologique porte sur l’authentification sans mot de passe, une méthode de sécurité de plus en plus utilisée pour remplacer les mots de passe traditionnels, souvent jugés peu sûrs et peu pratiques. Cette nouvelle approche, appelée passwordless, repose sur des technologies comme les passkeys, la biométrie (empreinte, reconnaissance faciale) ou les clés de sécurité physiques compatibles FIDO2. Ces systèmes permettent à l’utilisateur de s’authentifier de façon rapide et sécurisée, sans avoir à mémoriser ou saisir un mot de passe.
+        Des entreprises comme Google, Apple ou encore Yubico adoptent massivement ces solutions, et des normes comme WebAuthn ou FIDO2 garantissent leur compatibilité et leur sécurité. Grâce à cette veille, j’ai pu suivre l’évolution rapide de ces technologies, comprendre leurs avantages (protection contre le phishing, meilleure expérience utilisateur) et identifier leur intégration croissante dans les systèmes d’information modernes.</p>
+    </div>
+
+    <!-- Objectifs de la veille -->
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+      <h2 class="text-2xl font-semibold mb-4">Objectifs de la veille</h2>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Identifier les technologies sans mot de passe (passkeys, WebAuthn, etc.)</li>
+        <li>Suivre leur adoption par les entreprises</li>
+        <li>Analyser les enjeux de sécurité, UX et conformité</li>
+      </ul>
+    </div>
+
+
+        <!-- Captures Feedly et Google Alertes -->
+        <h2 class="text-2xl font-semibold mb-4" style="color:#38D807">Outils utilisés</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+              <h3 class="text-xl font-semibold mb-2">Feedly</h3>
+              <div class="w-full h-64 bg-gray-700 rounded-lg flex items-center justify-center">
+                <a href="https://feedly.com/i/my/me" target="_blank">
+                    <img src="images/feedly.png" class="max-h-56 object-contain" alt="Capture Feedly">
+                  </a></div>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+              <h3 class="text-xl font-semibold mb-2">Google Alertes</h3>
+              <div class="w-full h-64 bg-gray-700 rounded-lg flex items-center justify-center">
+                <a href="https://www.google.fr/alerts?pli=1" target="_blank">
+                    <img src="images/googlealerte.png" class="max-h-56 object-contain" alt="Capture Feedly">
+                  </a></div>
+            </div>
+          </div>
+        </main>
+      
+
+    <!-- Actualités récentes -->
+
+  <h2 class="text-2xl font-semibold mb-4" style="color:#38D807"><br>Actualités récentes</h2>
+  <div class="space-y-6">
+    <div class="w-full bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform translate-x-20 opacity-0 animate-slide-in">
+        <div class="flex items-center space-x-4">
+            <img src="images/article1.png" class="max-h-56 object-contain rounded-lg" alt="Capture Article">
+            <div>
+            <h3 class="text-xl font-bold mb-2">13/05/2025</h3>
+            <p>Sécurité numérique : les mots de passe remplacés par les passkeys et la biométrie.</p>
+            <p>L’article explique comment les géants de la tech, comme Microsoft, Google ou Apple, abandonnent progressivement les mots de passe au profit de l’authentification sans mot de passe (passwordless). Grâce aux passkeys et à la biométrie, l’utilisateur peut s’authentifier plus simplement et plus sûrement. Microsoft impose désormais cette méthode sur tous les nouveaux comptes, une étape majeure vers la fin du mot de passe classique, vulnérable au phishing et au piratage.</p>
+            <a href="https://www.lejdd.fr/economie/securite-numerique-les-mots-de-passe-remplaces-par-les-passkeys-et-la-biometrie-157966" target="_blank" class="text-indigo-400 underline">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform translate-x-20 opacity-0 animate-slide-in">
+        <div class="flex items-center space-x-4">
+            <img src="images/passkey-illustration.webp" class="max-h-56 object-contain rounded-lg" alt="Capture Article">
+            <div>
+            <h3 class="text-xl font-bold mb-2">02/05/2025</h3>
+            <p>Les mots de passe deviennent ringards chez Microsoft : les nouveaux utilisateurs utiliseront une autre méthode d'authentification.</p>
+            <p>Microsoft annonce que tous les nouveaux comptes utilisateurs seront désormais configurés sans mot de passe, utilisant à la place des passkeys. Ces méthodes plus sécurisées reposent sur la biométrie, les appareils de confiance ou des clés physiques compatibles FIDO2.
+                L’objectif de Microsoft est clair : supprimer définitivement les mots de passe, jugés obsolètes et vulnérables, tout en rendant l’authentification plus simple et plus résistante au phishing.</p>
+            <a href="https://www.clubic.com/actualite-564012-les-mots-de-passe-deviennent-ringards-chez-microsoft-les-nouveaux-utilisateurs-utiliseront-une-autre-methode-d-authentification.html" target="_blank" class="text-indigo-400 underline">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <footer class="bg-gray-900 text-white py-4 text-center">
+    <p>Portfolio de ZEPHIR Ludmilla - BTS SIO SLAM - 2025</p>
+  </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-slide-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.scroll-animate').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
